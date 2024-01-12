@@ -31,6 +31,11 @@ li {
     color: #18181B;
 }
 
+.google-card,
+.meta-card {
+    box-shadow: 0 0 20px rgb(242, 242, 242);
+}
+
 /* Text section styles */
 .container {
     display: grid;
