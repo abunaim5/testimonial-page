@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Common shared styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #D4D4D8;
+}
+
+.text-container,
+.card {
+    width: 100%;
+}
+
+.color-primary,
+li {
+    color: #52525A;
+}
+
+.text-container,
+.card {
+    align-self: center;
+    width:100%;
+    /* width: calc(100% - 32px); */
+
+    /* min-height: 19vw; */
+    /* border: 1px solid tomato; */
+}
+
+/* Text section styles */
+.container {
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    width: 67%;
+    max-width: 1280px;
+    min-height: 40vw;
+    margin: 72px auto;
+    background-color: #FAFAF9;
+}
+
+.text-container{
+    padding: 0 0 0 72px;
+}
+
+.text-container .star {
+    display: inline-block;
+    /* color:#FAFAF9; */
+    background-color: #F5C044;
+    /* border: 5px solid #F5C044; */
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.text-container .title {
+    font-size: 2.25rem;
+    color: #18181B;
+    margin: 24px 0 0 ;
+}
+
+.text-container .description {
+    font-size: 1.25rem;
+    line-height: 35px;
+    margin: 18px 0 0;
+}
+
+.text-container>ul {
+    list-style: none;
+    margin: 42px 0 0;
+}
+
+.text-container>ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 12px;
+    /* display: grid;
+    align-items: center; */
+
+    color: #52525A;
+    font-size: 0.875rem;
+    /* border: 2px solid teal; */
+}
+
+/* Card styles */
+.card {
+    display: grid;
+    row-gap:32px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 72px 0 0;
+}
+
+.card .google-card {
+    grid-column: 3/span 6;
+    background-color: #FFFFFF;
+    align-self: center;
+    padding:35px;
+    border-radius: 15px;
+    /* border: 1px solid teal; */
+}
+
+.card .google-card .google-img,
+.meta-card-img {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.card .google-card .google-img #google,
+#meta-img {
+    width: 30%;
+}
+
+.card .google-card .google-card-text * {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.card .google-card .google-card-text p, .card .meta-card .meta-card-text p{
+    line-height: 30px;
+}
+
+.card .meta-card {
+    grid-column: 1/span 4;
+    background-color: #FFFFFF;
+    align-self: center;
+    padding:35px;
+    border-radius: 15px;
+    /* border: 1px solid teal; */
+}
+
+.meta-card .meta-card-text *{
+    font-size: 1rem;
+    margin-top: 10px;
+}
